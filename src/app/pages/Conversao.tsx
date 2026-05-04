@@ -28,7 +28,7 @@ const funnelData = [
   { name: "Fechados", value: 67, color: "#ddd6fe" },
 ];
 
-export function Conversao() {
+export default function Conversao() {
   return (
     <div className="p-6 space-y-6">
       {/* Page Header */}
