@@ -1,38 +1,14 @@
-import { createBrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Layout from "./app/components/Layout";
-
-import Dashboard from "./app/pages/Dashboard";
-import Clientes from "./app/pages/Clientes";
-import Leads from "./app/pages/Leads";
-import SistemaInterno from "./app/pages/SistemaInterno";
-import Conversao from "./app/pages/Conversao";
-
-export const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Layout />,
-    children: [
-      {
-        index: true,
-        element: <Dashboard />,
-      },
-      {
-        path: "leads",
-        element: <Leads />,
-      },
-      {
-        path: "clientes",
-        element: <Clientes />,
-      },
-      {
-        path: "sistema-interno",
-        element: <SistemaInterno />,
-      },
-      {
-        path: "conversao",
-        element: <Conversao />,
-      },
-    ],
-  },
-]);
+export default function AppRoutes() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<h1>Clientes OK</h1>} />
+        <Route path="/leads" element={<h1>Leads OK</h1>} />
+        <Route path="/sistema" element={<h1>Sistema OK</h1>} />
+        <Route path="/conversao" element={<h1>Conversão OK</h1>} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
