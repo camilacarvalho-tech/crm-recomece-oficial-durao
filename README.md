@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   # CRM para gerenciamento de usuários
 
@@ -13,3 +14,6 @@
 =======
 # crm-recomece
 >>>>>>> 4a88b47ac8463c67c8179404365b062d37c4a5e7
+=======
+# crm-recomece-oficial-durao
+>>>>>>> cea8b3b264faa0399bc94539759ea4aac4992b15
